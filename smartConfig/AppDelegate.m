@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "AFNetworkReachabilityManager.h"
 
 @interface AppDelegate ()
 
@@ -16,9 +17,31 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self startNetWork];//触发网络权限
     return YES;
 }
 
+- (void)startNetWork{
+    AFNetworkReachabilityManager *mgr = [AFNetworkReachabilityManager sharedManager];
+        [mgr setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+            switch (status) {
+                case AFNetworkReachabilityStatusUnknown:
+                    break;
+                case AFNetworkReachabilityStatusNotReachable:
+                    NSLog(@"[network]:NotReachable");
+                    break;
+                case AFNetworkReachabilityStatusReachableViaWiFi:
+                    NSLog(@"[network]:WiFi");
+                    break;
+                case AFNetworkReachabilityStatusReachableViaWWAN:
+                    NSLog(@"[network]:WWAN");
+                    break;
+                default:
+                    break;
+            }
+        }];
+        [mgr startMonitoring];
+}
 
 #pragma mark - UISceneSession lifecycle
 

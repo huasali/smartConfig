@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,9 +14,18 @@
 		9841F6DD263A8647002B9443 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9841F6DC263A8647002B9443 /* Assets.xcassets */; };
 		9841F6E0263A8647002B9443 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9841F6DE263A8647002B9443 /* LaunchScreen.storyboard */; };
 		9841F6E3263A8647002B9443 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9841F6E2263A8647002B9443 /* main.m */; };
+		9841F6EE263A8728002B9443 /* UdpSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9841F6ED263A8728002B9443 /* UdpSocketManager.m */; };
+		9841F6F8263A8751002B9443 /* BroadcastWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 9841F6F3263A8751002B9443 /* BroadcastWork.m */; };
+		9841F6F9263A8751002B9443 /* UnicastWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 9841F6F4263A8751002B9443 /* UnicastWork.m */; };
+		9841F6FA263A8751002B9443 /* CastClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9841F6F6263A8751002B9443 /* CastClient.m */; };
+		9841F6FB263A8751002B9443 /* MutlicastWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 9841F6F7263A8751002B9443 /* MutlicastWork.m */; };
+		9841F6FF263A875E002B9443 /* GNLocationWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 9841F6FE263A875E002B9443 /* GNLocationWork.m */; };
+		9EFF3E75E2E600382E80A8B7 /* Pods_smartConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E1D2F489579E1BE1B8D861 /* Pods_smartConfig.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40BCAB1B52129ACE5DAC3ED5 /* Pods-smartConfig.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartConfig.release.xcconfig"; path = "Target Support Files/Pods-smartConfig/Pods-smartConfig.release.xcconfig"; sourceTree = "<group>"; };
+		72E1D2F489579E1BE1B8D861 /* Pods_smartConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smartConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9841F6CD263A8644002B9443 /* smartConfig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smartConfig.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9841F6D0263A8644002B9443 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9841F6D1263A8644002B9443 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +38,20 @@
 		9841F6DF263A8647002B9443 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9841F6E1263A8647002B9443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9841F6E2263A8647002B9443 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9841F6EC263A8728002B9443 /* UdpSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UdpSocketManager.h; sourceTree = "<group>"; };
+		9841F6ED263A8728002B9443 /* UdpSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UdpSocketManager.m; sourceTree = "<group>"; };
+		9841F6F0263A8751002B9443 /* BroadcastWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BroadcastWork.h; sourceTree = "<group>"; };
+		9841F6F1263A8751002B9443 /* CastClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CastClient.h; sourceTree = "<group>"; };
+		9841F6F2263A8751002B9443 /* UnicastWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnicastWork.h; sourceTree = "<group>"; };
+		9841F6F3263A8751002B9443 /* BroadcastWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BroadcastWork.m; sourceTree = "<group>"; };
+		9841F6F4263A8751002B9443 /* UnicastWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnicastWork.m; sourceTree = "<group>"; };
+		9841F6F5263A8751002B9443 /* MutlicastWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutlicastWork.h; sourceTree = "<group>"; };
+		9841F6F6263A8751002B9443 /* CastClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CastClient.m; sourceTree = "<group>"; };
+		9841F6F7263A8751002B9443 /* MutlicastWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutlicastWork.m; sourceTree = "<group>"; };
+		9841F6FD263A875D002B9443 /* GNLocationWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNLocationWork.h; sourceTree = "<group>"; };
+		9841F6FE263A875E002B9443 /* GNLocationWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNLocationWork.m; sourceTree = "<group>"; };
+		9841F70F263A96D2002B9443 /* smartConfig.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = smartConfig.entitlements; sourceTree = "<group>"; };
+		B4477273A4E1FD1C8204A2BA /* Pods-smartConfig.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartConfig.debug.xcconfig"; path = "Target Support Files/Pods-smartConfig/Pods-smartConfig.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EFF3E75E2E600382E80A8B7 /* Pods_smartConfig.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +71,8 @@
 			children = (
 				9841F6CF263A8644002B9443 /* smartConfig */,
 				9841F6CE263A8644002B9443 /* Products */,
+				D4ABD1D94FF5927C4A345FAC /* Pods */,
+				DCA77E0FCDD8C3BBD97EE222 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +87,9 @@
 		9841F6CF263A8644002B9443 /* smartConfig */ = {
 			isa = PBXGroup;
 			children = (
+				9841F70F263A96D2002B9443 /* smartConfig.entitlements */,
+				9841F6EB263A86BA002B9443 /* location */,
+				9841F6EA263A86A9002B9443 /* castLib */,
 				9841F6D0263A8644002B9443 /* AppDelegate.h */,
 				9841F6D1263A8644002B9443 /* AppDelegate.m */,
 				9841F6D3263A8644002B9443 /* SceneDelegate.h */,
@@ -76,6 +105,49 @@
 			path = smartConfig;
 			sourceTree = "<group>";
 		};
+		9841F6EA263A86A9002B9443 /* castLib */ = {
+			isa = PBXGroup;
+			children = (
+				9841F6F0263A8751002B9443 /* BroadcastWork.h */,
+				9841F6F3263A8751002B9443 /* BroadcastWork.m */,
+				9841F6F1263A8751002B9443 /* CastClient.h */,
+				9841F6F6263A8751002B9443 /* CastClient.m */,
+				9841F6F5263A8751002B9443 /* MutlicastWork.h */,
+				9841F6F7263A8751002B9443 /* MutlicastWork.m */,
+				9841F6F2263A8751002B9443 /* UnicastWork.h */,
+				9841F6F4263A8751002B9443 /* UnicastWork.m */,
+				9841F6EC263A8728002B9443 /* UdpSocketManager.h */,
+				9841F6ED263A8728002B9443 /* UdpSocketManager.m */,
+			);
+			path = castLib;
+			sourceTree = "<group>";
+		};
+		9841F6EB263A86BA002B9443 /* location */ = {
+			isa = PBXGroup;
+			children = (
+				9841F6FD263A875D002B9443 /* GNLocationWork.h */,
+				9841F6FE263A875E002B9443 /* GNLocationWork.m */,
+			);
+			path = location;
+			sourceTree = "<group>";
+		};
+		D4ABD1D94FF5927C4A345FAC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4477273A4E1FD1C8204A2BA /* Pods-smartConfig.debug.xcconfig */,
+				40BCAB1B52129ACE5DAC3ED5 /* Pods-smartConfig.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DCA77E0FCDD8C3BBD97EE222 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72E1D2F489579E1BE1B8D861 /* Pods_smartConfig.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9841F6E6263A8647002B9443 /* Build configuration list for PBXNativeTarget "smartConfig" */;
 			buildPhases = (
+				1DEE7BC2824FCA36DBDDD971 /* [CP] Check Pods Manifest.lock */,
 				9841F6C9263A8644002B9443 /* Sources */,
 				9841F6CA263A8644002B9443 /* Frameworks */,
 				9841F6CB263A8644002B9443 /* Resources */,
+				EFAF7612639A1F006A3AB0F4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,15 +214,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1DEE7BC2824FCA36DBDDD971 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-smartConfig-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFAF7612639A1F006A3AB0F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-smartConfig/Pods-smartConfig-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-smartConfig/Pods-smartConfig-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-smartConfig/Pods-smartConfig-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9841F6C9263A8644002B9443 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9841F6FB263A8751002B9443 /* MutlicastWork.m in Sources */,
+				9841F6F8263A8751002B9443 /* BroadcastWork.m in Sources */,
+				9841F6FA263A8751002B9443 /* CastClient.m in Sources */,
 				9841F6D8263A8644002B9443 /* ViewController.m in Sources */,
 				9841F6D2263A8644002B9443 /* AppDelegate.m in Sources */,
 				9841F6E3263A8647002B9443 /* main.m in Sources */,
+				9841F6EE263A8728002B9443 /* UdpSocketManager.m in Sources */,
 				9841F6D5263A8644002B9443 /* SceneDelegate.m in Sources */,
+				9841F6FF263A875E002B9443 /* GNLocationWork.m in Sources */,
+				9841F6F9263A8751002B9443 /* UnicastWork.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,12 +410,15 @@
 		};
 		9841F6E7263A8647002B9443 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4477273A4E1FD1C8204A2BA /* Pods-smartConfig.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = smartConfig/smartConfig.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WW369W9G65;
 				INFOPLIST_FILE = smartConfig/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,12 +431,15 @@
 		};
 		9841F6E8263A8647002B9443 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40BCAB1B52129ACE5DAC3ED5 /* Pods-smartConfig.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = smartConfig/smartConfig.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WW369W9G65;
 				INFOPLIST_FILE = smartConfig/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
